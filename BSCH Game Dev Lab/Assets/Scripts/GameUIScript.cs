@@ -7,6 +7,7 @@ public class GameUIScript : MonoBehaviour
 {
     public TMP_Text scoreText;
     public TMP_Text healthText;
+    public TMP_Text endText;
     public GameManagerScript gameManager;
     
     // Start is called before the first frame update
@@ -18,7 +19,7 @@ public class GameUIScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = "Score: " + gameManager.score;
-        healthText.text = "Health: " + gameManager.health;
+        scoreText.text = "Points: " + gameManager.score;
+        healthText.text = "Lives: " + gameManager.health;
     }
 }

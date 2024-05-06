@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickupScript : MonoBehaviour
 {
     public float scoreValue;
-    public GameManagerScript gameManager;
+    private GameManagerScript gameManager;
     public GameObject collectedEffect;
     
     // Start is called before the first frame update

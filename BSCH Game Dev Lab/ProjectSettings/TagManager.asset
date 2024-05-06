@@ -7,6 +7,10 @@ TagManager:
   - Game Manager
   - Start
   - Checkpoint
+  - Enemy
+  - Obstacle
+  - End
+  - UI
   layers:
   - Default
   - TransparentFX

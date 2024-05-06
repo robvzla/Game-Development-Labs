@@ -25,6 +25,16 @@ public class CharacterControllerScript : MonoBehaviour
 	void Update()
 	{
 		anim.SetFloat("speed", Mathf.Abs(myRb.velocity.x));
+		
+		//detect player direction and flip the sprite
+		if (myRb.velocity.x > 0.1f)
+		{
+		    anim.transform.localScale = new Vector3(1, 1, 1);
+		}
+	    else if (myRb.velocity.x < -0.1f)
+	    {
+		    anim.transform.localScale = new Vector3(-1, 1, 1);
+	    }	
 
 		//animation flip
 		if (Input.GetAxis("Horizontal") > 0.1f)
